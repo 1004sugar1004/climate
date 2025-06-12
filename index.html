@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기후 모험: 지구를 구하는 여행</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="title-screen">
+            <h1>기후 모험: 지구를 구하는 여행</h1>
+            <p>초등학생을 위한 기후위기 체험 이야기</p>
+            <button id="start-btn">시작하기</button>
+        </div>
+
+        <div id="game-screen" class="hidden">
+            <div id="story-container">
+                <div id="character-image"></div>
+                <div id="story-text"></div>
+            </div>
+            <div id="choice-container"></div>
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+
+        <div id="ending-screen" class="hidden">
+            <h2>모험이 끝났습니다!</h2>
+            <p id="ending-message"></p>
+            <div id="action-ideas">
+                <h3>실생활에서 할 수 있는 기후 행동</h3>
+                <ul id="action-list"></ul>
+            </div>
+            <button id="restart-btn">다시 시작하기</button>
+        </div>
+    </div>
+    <script src="story.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
